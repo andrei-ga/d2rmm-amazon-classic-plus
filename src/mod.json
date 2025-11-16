@@ -26,7 +26,7 @@
     {
       "id": "explodingArrowFireArrowDgmSynergy",
       "name": "Exploding Arrow - Fire Arrow Damage Synergy",
-      "description": "The damage of Exploding Arrow is increased by this amount for each skill point in Fire Arrow. The original value is 14.",
+      "description": "The damage of Exploding Arrow is increased by this amount for each skill point in Fire Arrow. The vanilla value is 14.",
       "type": "number",
       "defaultValue": 15,
       "minValue": 5,
@@ -35,10 +35,10 @@
     {
       "id": "explodingArrowImmolationArrowDgmSynergy",
       "name": "Exploding Arrow - Immolation Arrow Damage Synergy",
-      "description": "The damage of Exploding Arrow is increased by this amount for each skill point in Immolation Arrow. The original value is 0.",
+      "description": "The damage of Exploding Arrow is increased by this amount for each skill point in Immolation Arrow. The vanilla value is 0.",
       "type": "number",
-      "defaultValue": 20,
-      "minValue": 5,
+      "defaultValue": 18,
+      "minValue": 0,
       "maxValue": 100
     },
     {
@@ -62,16 +62,16 @@
     {
       "id": "immolationArrowFireArrowDgmSynergy",
       "name": "Immolation Arrow - Fire Arrow Damage Synergy",
-      "description": "The damage of Immolation Arrow is increased by this amount for each skill point in Fire Arrow. The original value is 0.",
+      "description": "The damage of Immolation Arrow is increased by this amount for each skill point in Fire Arrow. The vanilla value is 0.",
       "type": "number",
-      "defaultValue": 20,
-      "minValue": 5,
+      "defaultValue": 15,
+      "minValue": 0,
       "maxValue": 100
     },
     {
       "id": "immolationArrowExplodingArrowDgmSynergy",
       "name": "Immolation Arrow - Exploding Arrow Damage Synergy",
-      "description": "The damage of Immolation Arrow is increased by this amount for each skill point in Exploding Arrow. The original value is 10.",
+      "description": "The damage of Immolation Arrow is increased by this amount for each skill point in Exploding Arrow. The vanilla value is 10.",
       "type": "number",
       "defaultValue": 20,
       "minValue": 5,
@@ -80,10 +80,46 @@
     {
       "id": "immolationArrowDgmPerSecondSynergy",
       "name": "Immolation Arrow Damage Per Second Synergy",
-      "description": "The damage per second of Immolation Arrow is increased by this amount for each skill point in Fire Arrow.",
+      "description": "The damage per second of Immolation Arrow is increased by this amount for each skill point in Fire Arrow. The vanilla value is 5.",
       "type": "number",
       "defaultValue": 30,
       "minValue": 5,
+      "maxValue": 100
+    },
+    {
+      "id": "freezingArrowRangeIncrease",
+      "name": "Freezing Arrow Explosion Range Increase",
+      "description": "Increase Freezing Arrow explosion range by this amount for each skill point in Magic Arrow.",
+      "type": "number",
+      "defaultValue": 1,
+      "minValue": 0,
+      "maxValue": 2
+    },
+    {
+      "id": "freezingArrowMaxRange",
+      "name": "Freezing Arrow Explosion Max Range",
+      "description": "The maximum range of the Freezing Arrow explosion.",
+      "type": "number",
+      "defaultValue": 20,
+      "minValue": 5,
+      "maxValue": 50
+    },
+    {
+      "id": "freezingArrowColdArrowDmgSynergy",
+      "name": "Freezing Arrow - Cold Arrow Damage Synergy",
+      "description": "The damage of Freezing Arrow is increased by this amount for each skill point in Cold Arrow. The vanilla value is 12.",
+      "type": "number",
+      "defaultValue": 8,
+      "minValue": 5,
+      "maxValue": 100
+    },
+    {
+      "id": "freezingArrowIceArrowDmgSynergy",
+      "name": "Freezing Arrow - Ice Arrow Damage Synergy",
+      "description": "The damage of Freezing Arrow is increased by this amount for each skill point in Ice Arrow. The vanilla value is 0.",
+      "type": "number",
+      "defaultValue": 8,
+      "minValue": 0,
       "maxValue": 100
     }
   ]
