@@ -1,0 +1,72 @@
+{
+  "name": "Amazon Classic Plus",
+  "description": "Buffs underperforming Amazon builds.",
+  "author": "ice133",
+  "version": "1.0",
+  "id": "amazon-classic-plus",
+  "config": [
+    {
+      "id": "explodingArrowRangeIncrease",
+      "name": "Exploding Arrow Explosion Range Increase",
+      "description": "Increase Exploding Arrow explosion range by this amount for each hard skill point in Fire Arrow.",
+      "type": "number",
+      "defaultValue": 1,
+      "minValue": 0,
+      "maxValue": 2
+    },
+    {
+      "id": "explodingArrowMaxRange",
+      "name": "Exploding Arrow Explosion Max Range",
+      "description": "The maximum range of the Exploding Arrow explosion.",
+      "type": "number",
+      "defaultValue": 20,
+      "minValue": 5,
+      "maxValue": 50
+    },
+    {
+      "id": "explodingArrowDgmSynergy",
+      "name": "Exploding Arrow Damage Synergy",
+      "description": "The damage of Exploding Arrow is increased by this amount for skill point in Fire Arrow. The original value is 14.",
+      "type": "number",
+      "defaultValue": 35,
+      "minValue": 5,
+      "maxValue": 100
+    },
+    {
+      "id": "immolationArrowRangeIncrease",
+      "name": "Immolation Arrow Explosion Range Increase",
+      "description": "Increase Immolation Arrow explosion range by this amount for each hard skill point in Fire Arrow.",
+      "type": "number",
+      "defaultValue": 1,
+      "minValue": 0,
+      "maxValue": 2
+    },
+    {
+      "id": "immolationArrowMaxRange",
+      "name": "Immolation Arrow Explosion Max Range",
+      "description": "The maximum range of the Immolation Arrow explosion.",
+      "type": "number",
+      "defaultValue": 20,
+      "minValue": 5,
+      "maxValue": 50
+    },
+    {
+      "id": "immolationArrowDgmSynergy",
+      "name": "Immolation Arrow Damage Synergy",
+      "description": "The damage of Immolation Arrow is increased by this amount for skill point in Exploding Arrow. The original value is 10.",
+      "type": "number",
+      "defaultValue": 35,
+      "minValue": 5,
+      "maxValue": 100
+    },
+    {
+      "id": "immolationArrowDgmPerSecondSynergy",
+      "name": "Immolation Arrow Damage Per Second Synergy",
+      "description": "The damage per second of Immolation Arrow is increased by this amount for soft skill point in Fire Arrow. The original value is 5 and it is based on hard points.",
+      "type": "number",
+      "defaultValue": 30,
+      "minValue": 5,
+      "maxValue": 100
+    }
+  ]
+}
