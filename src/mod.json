@@ -24,18 +24,27 @@
       "maxValue": 50
     },
     {
-      "id": "explodingArrowDgmSynergy",
-      "name": "Exploding Arrow Damage Synergy",
-      "description": "The damage of Exploding Arrow is increased by this amount for skill point in Fire Arrow. The original value is 14.",
+      "id": "explodingArrowFireArrowDgmSynergy",
+      "name": "Exploding Arrow - Fire Arrow Damage Synergy",
+      "description": "The damage of Exploding Arrow is increased by this amount for each skill point in Fire Arrow. The original value is 14.",
       "type": "number",
-      "defaultValue": 35,
+      "defaultValue": 15,
+      "minValue": 5,
+      "maxValue": 100
+    },
+    {
+      "id": "explodingArrowImmolationArrowDgmSynergy",
+      "name": "Exploding Arrow - Immolation Arrow Damage Synergy",
+      "description": "The damage of Exploding Arrow is increased by this amount for each skill point in Immolation Arrow. The original value is 0.",
+      "type": "number",
+      "defaultValue": 20,
       "minValue": 5,
       "maxValue": 100
     },
     {
       "id": "immolationArrowRangeIncrease",
       "name": "Immolation Arrow Explosion Range Increase",
-      "description": "Increase Immolation Arrow explosion range by this amount for each hard skill point in Fire Arrow.",
+      "description": "Increase Immolation Arrow explosion range by this amount for each skill point in Fire Arrow.",
       "type": "number",
       "defaultValue": 1,
       "minValue": 0,
@@ -51,18 +60,27 @@
       "maxValue": 50
     },
     {
-      "id": "immolationArrowDgmSynergy",
-      "name": "Immolation Arrow Damage Synergy",
-      "description": "The damage of Immolation Arrow is increased by this amount for skill point in Exploding Arrow. The original value is 10.",
+      "id": "immolationArrowFireArrowDgmSynergy",
+      "name": "Immolation Arrow - Fire Arrow Damage Synergy",
+      "description": "The damage of Immolation Arrow is increased by this amount for each skill point in Fire Arrow. The original value is 0.",
       "type": "number",
-      "defaultValue": 35,
+      "defaultValue": 20,
+      "minValue": 5,
+      "maxValue": 100
+    },
+    {
+      "id": "immolationArrowExplodingArrowDgmSynergy",
+      "name": "Immolation Arrow - Exploding Arrow Damage Synergy",
+      "description": "The damage of Immolation Arrow is increased by this amount for each skill point in Exploding Arrow. The original value is 10.",
+      "type": "number",
+      "defaultValue": 20,
       "minValue": 5,
       "maxValue": 100
     },
     {
       "id": "immolationArrowDgmPerSecondSynergy",
       "name": "Immolation Arrow Damage Per Second Synergy",
-      "description": "The damage per second of Immolation Arrow is increased by this amount for soft skill point in Fire Arrow. The original value is 5 and it is based on hard points.",
+      "description": "The damage per second of Immolation Arrow is increased by this amount for each skill point in Fire Arrow.",
       "type": "number",
       "defaultValue": 30,
       "minValue": 5,
