@@ -109,7 +109,7 @@
       "name": "Freezing Arrow - Cold Arrow Damage Synergy",
       "description": "The damage of Freezing Arrow is increased by this amount for each skill point in Cold Arrow. The vanilla value is 12.",
       "type": "number",
-      "defaultValue": 8,
+      "defaultValue": 12,
       "minValue": 5,
       "maxValue": 100
     },

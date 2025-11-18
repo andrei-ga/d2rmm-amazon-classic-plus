@@ -19,7 +19,7 @@ const skillsFilename = 'global\\excel\\skills.txt';
 const skills = D2RMM.readTsv(skillsFilename);
 
 skills.rows.forEach((row) => {
-    if (row["skill"] === "Exploding Arrow") {
+    if (row.skill === "Exploding Arrow") {
         // Explosion range
         if (explodingArrowRangeIncrease) {
             row.calc1 = `min((skill('Magic Arrow'.blvl))*${explodingArrowRangeIncrease}+3, ${explodingArrowMaxRange})`;
@@ -28,7 +28,7 @@ skills.rows.forEach((row) => {
         row.Param8 = explodingArrowFireArrowDgmSynergy;
         row.Param9 = explodingArrowImmolationArrowDgmSynergy;
         row.EDmgSymPerCalc = `(skill('Fire Arrow'.blvl)) * par8 + (skill('Immolation Arrow'.blvl)) * par9`;
-    } else if (row["skill"] === "Immolation Arrow") {
+    } else if (row.skill === "Immolation Arrow") {
         // Explosion range
         if (immolationArrowRangeIncrease) {
             row.calc2 = `min((skill('Magic Arrow'.blvl))*${immolationArrowRangeIncrease}+3, ${immolationArrowMaxRange})`;
@@ -37,7 +37,7 @@ skills.rows.forEach((row) => {
         row.Param8 = immolationArrowExplodingArrowDgmSynergy;
         row.Param9 = immolationArrowFireArrowDgmSynergy;
         row.EDmgSymPerCalc = `(skill('Exploding Arrow'.blvl)) * par8 + (skill('Fire Arrow'.blvl)) * par9`;
-    } else if (row["skill"] === "Freezing Arrow") {
+    } else if (row.skill === "Freezing Arrow") {
         // Explosion range
         if (freezingArrowRangeIncrease) {
             row.calc1 = `min((skill('Magic Arrow'.blvl))*${freezingArrowRangeIncrease}+3, ${freezingArrowMaxRange})`;
@@ -75,7 +75,7 @@ const skilldescFilename = 'global\\excel\\skilldesc.txt';
 const skilldesc = D2RMM.readTsv(skilldescFilename);
 
 skilldesc.rows.forEach((row) => {
-    if (row["skilldesc"] === "exploding arrow") {
+    if (row.skilldesc === "exploding arrow") {
         if (explodingArrowImmolationArrowDgmSynergy) {
             row.dsc3line3 = 76;
             row.dsc3texta3 = 'Firedplev';
@@ -92,7 +92,7 @@ skilldesc.rows.forEach((row) => {
             row.dsc3line4 = 18;
             row.dsc3texta4 = 'skillname6';
         }
-    } else if (row["skilldesc"] === "immolation arrow") {
+    } else if (row.skilldesc === "immolation arrow") {
         row.dsc3calca2 = immolationArrowDgmPerSecondSynergy;
         if (immolationArrowFireArrowDgmSynergy) {
             row.dsc3line4 = 76;
@@ -110,7 +110,7 @@ skilldesc.rows.forEach((row) => {
             row.dsc3line5 = 18;
             row.dsc3texta5 = 'skillname6';
         }
-    } else if (row["skilldesc"] === "freezing arrow") {
+    } else if (row.skilldesc === "freezing arrow") {
         if (freezingArrowIceArrowDmgSynergy) {
             row.dsc3line4 = 76;
             row.dsc3texta4 = 'Colddplev';
